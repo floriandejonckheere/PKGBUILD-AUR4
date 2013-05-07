@@ -4,6 +4,7 @@ pkgbase = fontconfig-ubuntu
 	pkgrel = 3
 	url = https://launchpad.net/ubuntu/precise/+source/fontconfig
 	install = fontconfig.install
+	changelog = ChangeLog
 	arch = i686
 	arch = x86_64
 	license = custom
