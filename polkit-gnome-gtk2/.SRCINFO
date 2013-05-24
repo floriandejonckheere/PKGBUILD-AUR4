@@ -1,5 +1,5 @@
 pkgbase = polkit-gnome-gtk2
-	pkgdesc = PolicyKit integration for the GNOME desktop
+	pkgdesc = PolicyKit integration for the GNOME desktop, compiled against GTK2
 	pkgver = 0.105
 	pkgrel = 1
 	url = http://www.freedesktop.org/wiki/Software/PolicyKit
