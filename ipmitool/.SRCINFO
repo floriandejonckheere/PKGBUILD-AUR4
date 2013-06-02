@@ -1,7 +1,7 @@
 pkgbase = ipmitool
 	pkgdesc = Command-line interface to IPMI-enabled devices
 	pkgver = 1.8.12
-	pkgrel = 3
+	pkgrel = 4
 	url = http://ipmitool.sourceforge.net
 	changelog = ChangeLog
 	arch = i686
