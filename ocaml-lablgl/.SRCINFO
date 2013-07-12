@@ -1,0 +1,24 @@
+pkgbase = ocaml-lablgl
+	pkgdesc = OCaml interface to OpenGL
+	pkgver = 1.04
+	pkgrel = 5
+	url = http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgl.html
+	arch = i686
+	arch = x86_64
+	license = BSD
+	depends = glu
+	depends = glut
+	depends = libxi
+	depends = libxmu
+	depends = libgl
+	depends = ocaml
+	depends = tcl
+	depends = tk
+	depends = mesa
+	options = !strip
+	options = !makeflags
+	source = http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/lablgl-1.04.tar.gz
+	md5sums = dcf05a0cffffdf06cbe0fe55f9eff974
+
+pkgname = ocaml-lablgl
+
