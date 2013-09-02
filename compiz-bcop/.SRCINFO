@@ -1,0 +1,18 @@
+pkgbase = compiz-bcop
+	pkgdesc = Compiz option code generator
+	pkgver = 0.8.8
+	pkgrel = 2
+	url = http://www.compiz.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = intltool
+	makedepends = pkgconfig
+	depends = compiz-core>=0.8.8
+	depends = libxslt
+	conflicts = compiz-bcop-git
+	source = http://releases.compiz.org/0.8.8/compiz-bcop-0.8.8.tar.bz2
+	sha1sums = 9210bd2a537480bdb11df0e3cc5f6d4548fd12da
+
+pkgname = compiz-bcop
+
