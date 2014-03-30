@@ -1,0 +1,14 @@
+pkgbase = rmlint
+	pkgdesc = Tool to remove duplicates and other lint, being much faster than fdupes
+	pkgver = 1.0.8
+	pkgrel = 1
+	url = https://github.com/sahib/rmlint
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = glibc
+	source = https://github.com/downloads/sahib/rmlint/rmlint_1.0.8.tar.gz
+	md5sums = f95f1440f55fea67bef8f67b33a61e93
+
+pkgname = rmlint
+
