@@ -3,6 +3,8 @@
 *.tar*
 *.tgz
 *.zip
+*.rpm
+*.deb
 
 # Signed sources
 *.asc
