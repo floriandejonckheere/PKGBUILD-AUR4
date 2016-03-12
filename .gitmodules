@@ -1,0 +1,3 @@
+[submodule "xfce4-hdaps"]
+	path = xfce4-hdaps
+	url = ssh+git://aur@aur.archlinux.org/xfce4-hdaps.git
