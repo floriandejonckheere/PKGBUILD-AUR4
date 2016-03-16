@@ -1,8 +1,8 @@
 post_install() {
   echo
   echo "Usage:"
-  echo "Configure the theme in your .zshrc file:"
-  echo "ZSH_THEME=\"powerlevel9k\""
+  echo "Configure your setup to use the theme. Instructions for different frameworks can be found at"
+  echo "https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions"
   echo
   echo "Requirements"
   echo "Vim Powerline patched font. Many different ones on the AUR"

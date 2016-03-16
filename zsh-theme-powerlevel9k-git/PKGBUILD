@@ -1,21 +1,26 @@
 # Maintainer: Florian Dejonckheere <florian at floriandejonckheere dot be>
 # Contributor:  jyantis <yantis@yantis.net>
 
-pkgname=oh-my-zsh-powerlevel9k-theme-git
 _pkgname=powerlevel9k
-pkgver=v0.3.1.r0.g472fb6f
-pkgrel=1
-pkgdesc='oh-my-zsh Powerlevel9k theme'
+pkgname=zsh-theme-${_pkgname}-git
+pkgver=v0.3.1.r10.g2630526
+pkgrel=2
+pkgdesc='Powerlevel9k theme for zsh'
 arch=('any')
 url='https://github.com/bhilburn/powerlevel9k'
 license=('custom')
-depends=('zsh' 'oh-my-zsh-git')
+depends=('zsh')
+optdepends=('oh-my-zsh-git: oh-my-zsh integration'
+	'prezto-git: Prezto integration'
+	'antigen-git: Antigen integration'
+	'zpm: ZPM integration'
+	'zsh-zim-git: Zim integration')
 source=("${_pkgname}::git+https://github.com/bhilburn/${_pkgname}.git")
 sha256sums=('SKIP')
 makedepends=('git')
-provides=('oh-my-zsh-powerlevel9k-theme')
-conflicts=('oh-my-zsh-powerlevel9k-theme')
-install='oh-my-zsh-powerlevel9k-theme.install'
+provides=("zsh-theme-${_pkgname}")
+conflicts=("zsh-theme-${_pkgname}")
+install="zsh-theme-${_pkgname}.install"
 
 pkgver()
 {
@@ -36,10 +41,10 @@ package()
 	install -D -m644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
 
 	# Install the theme
-	install -D -m644 powerlevel9k.zsh-theme "${pkgdir}/usr/share/oh-my-zsh/themes/powerlevel9k.zsh-theme"
+	install -D -m644 powerlevel9k.zsh-theme "${pkgdir}/usr/share/zsh-theme-${_pkgname}/${_pkgname}.zsh-theme"
 
 	# Install the utilities
 	for FILE in functions/*.zsh; do
-		install -D -m644 "${FILE}" "${pkgdir}/usr/share/oh-my-zsh/themes/functions/$(basename ${FILE})"
+		install -D -m644 "${FILE}" "${pkgdir}/usr/share/zsh-theme-${_pkgname}/functions/$(basename ${FILE})"
 	done
 }
