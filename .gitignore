@@ -16,3 +16,6 @@
 # Misc
 *~
 *.bak
+
+# IDE
+.idea
